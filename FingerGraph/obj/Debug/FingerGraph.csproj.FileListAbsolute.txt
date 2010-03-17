@@ -1,0 +1,8 @@
+C:\fingergraph\FingerGraph\bin\Debug\FingerGraph.exe
+C:\fingergraph\FingerGraph\bin\Debug\FingerGraph.pdb
+C:\fingergraph\FingerGraph\obj\Debug\ResolveAssemblyReference.cache
+C:\fingergraph\FingerGraph\obj\Debug\FingerGraph.Properties.Resources.resources
+C:\fingergraph\FingerGraph\obj\Debug\FingerGraph.csproj.GenerateResource.Cache
+C:\fingergraph\FingerGraph\obj\Debug\FingerGraph.exe
+C:\fingergraph\FingerGraph\obj\Debug\FingerGraph.pdb
+C:\fingergraph\FingerGraph\obj\Debug\FingerGraph.MainForm.resources
