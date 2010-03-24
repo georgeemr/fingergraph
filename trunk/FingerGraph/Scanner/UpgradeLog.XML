@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="FutronicDrv">
+</Property><Property Name="Solution File" Value="G:\FutronicDrv\FutronicDrv.sln">
+</Property><Property Name="User Options File" Value="G:\FutronicDrv\FutronicDrv.suo">
+</Property><Property Name="Date" Value="20 марта 2010 г.">
+</Property><Property Name="Time" Value="21:21">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="FutronicDrv.sln" Description="File successfully backed up as G:\FutronicDrv\Backup\FutronicDrv.sln">
+</Event><Event ErrorLevel="0" Project="" Source="FutronicDrv.suo" Description="File successfully backed up as G:\FutronicDrv\Backup\FutronicDrv.suo">
+</Event><Event ErrorLevel="0" Project="FutronicDrv" Source="FutronicDrv\FutronicDrv.csproj" Description="Project file successfully backed up as G:\FutronicDrv\Backup\FutronicDrv\FutronicDrv.csproj">
+</Event><Event ErrorLevel="0" Project="FutronicDrv" Source="FutronicDrv\Program.cs" Description="File successfully backed up as G:\FutronicDrv\Backup\FutronicDrv\Program.cs">
+</Event><Event ErrorLevel="0" Project="FutronicDrv" Source="FutronicDrv\Properties\AssemblyInfo.cs" Description="File successfully backed up as G:\FutronicDrv\Backup\FutronicDrv\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="FutronicDrv" Source="FutronicDrv\ftrScanAPI.dll" Description="File successfully backed up as G:\FutronicDrv\Backup\FutronicDrv\ftrScanAPI.dll">
+</Event><Event ErrorLevel="0" Project="FutronicDrv" Source="FutronicDrv\FutronicDrv.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FutronicDrv" Source="FutronicDrv\FutronicDrv.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="FutronicDrv.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="FutronicDrv.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FutronicDrv" Source="FutronicDrv\FutronicDrv.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
