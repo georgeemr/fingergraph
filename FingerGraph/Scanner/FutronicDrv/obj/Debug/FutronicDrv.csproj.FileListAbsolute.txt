@@ -1,0 +1,18 @@
+C:\Users\Станислав Сартасов\Documents\Visual Studio 2008\Projects\FutronicDrv\FutronicDrv\bin\Debug\ftrScanAPI.dll
+C:\Users\Станислав Сартасов\Documents\Visual Studio 2008\Projects\FutronicDrv\FutronicDrv\bin\Debug\FutronicDrv.exe
+C:\Users\Станислав Сартасов\Documents\Visual Studio 2008\Projects\FutronicDrv\FutronicDrv\bin\Debug\FutronicDrv.pdb
+C:\Users\Станислав Сартасов\Documents\Visual Studio 2008\Projects\FutronicDrv\FutronicDrv\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Станислав Сартасов\Documents\Visual Studio 2008\Projects\FutronicDrv\FutronicDrv\obj\Debug\FutronicDrv.exe
+C:\Users\Станислав Сартасов\Documents\Visual Studio 2008\Projects\FutronicDrv\FutronicDrv\obj\Debug\FutronicDrv.pdb
+G:\FutronicDrv\FutronicDrv\obj\Debug\FutronicDrv.exe
+G:\FutronicDrv\FutronicDrv\obj\Debug\FutronicDrv.pdb
+G:\FutronicDrv\FutronicDrv\bin\Debug\ftrScanAPI.dll
+G:\FutronicDrv\FutronicDrv\bin\Debug\FutronicDrv.exe
+G:\FutronicDrv\FutronicDrv\bin\Debug\FutronicDrv.pdb
+G:\FutronicDrv\FutronicDrv\obj\Debug\ResolveAssemblyReference.cache
+D:\FutronicDrv\FutronicDrv\obj\Debug\FutronicDrv.exe
+D:\FutronicDrv\FutronicDrv\obj\Debug\FutronicDrv.pdb
+D:\FutronicDrv\FutronicDrv\bin\Debug\ftrScanAPI.dll
+D:\FutronicDrv\FutronicDrv\bin\Debug\FutronicDrv.exe
+D:\FutronicDrv\FutronicDrv\bin\Debug\FutronicDrv.pdb
+D:\FutronicDrv\FutronicDrv\obj\Debug\ResolveAssemblyReference.cache
