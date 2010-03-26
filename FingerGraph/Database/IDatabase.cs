@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Drawing;
 
-namespace FingerGraph.Database {
-    internal interface IDatabase {
-        void AddFingerprint(FingerprintCard card);
-        FingerprintCard[] GetFingerprints();
+namespace FingerGraphDB
+{
+    interface IDatabase
+    {
+        void AddFingerprint(FingerprintCard card, Image newprint);
+        FingerprintCard[] GetFingerprints();        
     }
 }
