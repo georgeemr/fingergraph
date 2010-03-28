@@ -11,7 +11,7 @@ namespace FingerGraphDB
 
     class FingerDatabase : IDatabase
     {
-        
+        private CacheDb CachedDB = new CacheDb();
 
         public static byte[] SerializeImage(Image image)   
         {
@@ -28,12 +28,8 @@ namespace FingerGraphDB
         }
 
 
-
-
-
         public void AddFingerprint(FingerprintCard card, Image newprint)
         {
-
             using (var newconnect = new DbConnection())
             {
 
@@ -45,8 +41,6 @@ namespace FingerGraphDB
                     query = "insert into usertbl values(\"" + card.guid + "\",\""
                     + card.FirstName + "\",\"" + card.LastName + "\");";
                     newconnect.SendQueryAndClose(query);
-                    card.FingerprintList.Add(newprint);
-
                 }
 
                 query = "insert into fprinttbl values(?File,\""
@@ -55,8 +49,10 @@ namespace FingerGraphDB
                 byte[] rawimg = SerializeImage(newprint);
                 MySqlParameter pFile = new MySqlParameter("?File", rawimg);
                 newconnect.SendQueryAndClose(query, pFile);
+                card.FingerprintList.Add(newprint);
             }
 
+            CachedDB.UpdateCard(card);
         }
 
 
@@ -83,7 +79,9 @@ namespace FingerGraphDB
         public FingerprintCard[] GetFingerprints()
         {
 
-            FingerprintCard[] resultarray = null;
+            FingerprintCard[] resultarray = CachedDB.getCacheDb(); //getCache
+            if (resultarray != null) return resultarray;
+
             using (var newconnect = new DbConnection())
             {
 
@@ -104,12 +102,8 @@ namespace FingerGraphDB
                 reader.Close();
                 resultarray = fingerprintlist.ToArray();
             }
-
+            CachedDB.UpdateCache(resultarray);
             return resultarray;
         }
-
-
     }
-
-
 }

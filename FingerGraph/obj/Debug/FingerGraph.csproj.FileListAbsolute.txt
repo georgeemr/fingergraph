@@ -6,3 +6,5 @@ C:\fingergraph\FingerGraph\obj\Debug\FingerGraph.csproj.GenerateResource.Cache
 C:\fingergraph\FingerGraph\obj\Debug\FingerGraph.exe
 C:\fingergraph\FingerGraph\obj\Debug\FingerGraph.pdb
 C:\fingergraph\FingerGraph\obj\Debug\FingerGraph.MainForm.resources
+d:\fingergraph\FingerGraph\obj\Debug\FingerGraph.exe
+d:\fingergraph\FingerGraph\obj\Debug\FingerGraph.pdb
