@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="FingerGraph">
+</Property><Property Name="Solution File" Value="D:\Ckan\FingerGraph.sln">
+</Property><Property Name="User Options File" Value="D:\Ckan\FingerGraph.suo">
+</Property><Property Name="Date" Value="25 марта 2010 г.">
+</Property><Property Name="Time" Value="16:13">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="FingerGraph.sln" Description="File successfully backed up as D:\Ckan\Backup\FingerGraph.sln">
+</Event><Event ErrorLevel="0" Project="" Source="FingerGraph.suo" Description="File successfully backed up as D:\Ckan\Backup\FingerGraph.suo">
+</Event><Event ErrorLevel="0" Project="FingerGraph" Source="FingerGraph\FingerGraph.csproj" Description="Project file successfully backed up as D:\Ckan\Backup\FingerGraph\FingerGraph.csproj">
+</Event><Event ErrorLevel="0" Project="FingerGraph" Source="FingerGraph\ComponentFactory.cs" Description="File successfully backed up as D:\Ckan\Backup\FingerGraph\ComponentFactory.cs">
+</Event><Event ErrorLevel="0" Project="FingerGraph" Source="FingerGraph\Database\IDatabase.cs" Description="File successfully backed up as D:\Ckan\Backup\FingerGraph\Database\IDatabase.cs">
+</Event><Event ErrorLevel="0" Project="FingerGraph" Source="FingerGraph\FingerprintCard.cs" Description="File successfully backed up as D:\Ckan\Backup\FingerGraph\FingerprintCard.cs">
+</Event><Event ErrorLevel="0" Project="FingerGraph" Source="FingerGraph\MainForm.cs" Description="File successfully backed up as D:\Ckan\Backup\FingerGraph\MainForm.cs">
+</Event><Event ErrorLevel="0" Project="FingerGraph" Source="FingerGraph\MainForm.Designer.cs" Description="File successfully backed up as D:\Ckan\Backup\FingerGraph\MainForm.Designer.cs">
+</Event><Event ErrorLevel="0" Project="FingerGraph" Source="FingerGraph\Matcher\IMatcher.cs" Description="File successfully backed up as D:\Ckan\Backup\FingerGraph\Matcher\IMatcher.cs">
+</Event><Event ErrorLevel="0" Project="FingerGraph" Source="FingerGraph\Program.cs" Description="File successfully backed up as D:\Ckan\Backup\FingerGraph\Program.cs">
+</Event><Event ErrorLevel="0" Project="FingerGraph" Source="FingerGraph\Properties\AssemblyInfo.cs" Description="File successfully backed up as D:\Ckan\Backup\FingerGraph\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="FingerGraph" Source="FingerGraph\Properties\Resources.Designer.cs" Description="File successfully backed up as D:\Ckan\Backup\FingerGraph\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="FingerGraph" Source="FingerGraph\Properties\Settings.Designer.cs" Description="File successfully backed up as D:\Ckan\Backup\FingerGraph\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="FingerGraph" Source="FingerGraph\Scanner\IScanner.cs" Description="File successfully backed up as D:\Ckan\Backup\FingerGraph\Scanner\IScanner.cs">
+</Event><Event ErrorLevel="0" Project="FingerGraph" Source="FingerGraph\Properties\Settings.settings" Description="File successfully backed up as D:\Ckan\Backup\FingerGraph\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="FingerGraph" Source="FingerGraph\MainForm.resx" Description="File successfully backed up as D:\Ckan\Backup\FingerGraph\MainForm.resx">
+</Event><Event ErrorLevel="0" Project="FingerGraph" Source="FingerGraph\Properties\Resources.resx" Description="File successfully backed up as D:\Ckan\Backup\FingerGraph\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="FingerGraph" Source="FingerGraph\FingerGraph.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FingerGraph" Source="FingerGraph\FingerGraph.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="FingerGraph.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="FingerGraph.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FingerGraph" Source="FingerGraph\FingerGraph.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
