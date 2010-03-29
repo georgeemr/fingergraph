@@ -4,9 +4,34 @@ using System.Linq;
 using System.Text;
 using System.Runtime.InteropServices;
 using System.Drawing;
+using System.Threading;
 
 namespace FutronicDrv
 {
+    struct _FTRSCAN_FAKE_REPLICA_PARAMETERS
+    { 
+        bool bCalculated; 
+        int nCalculatedSum1; 
+        int nCalculatedSumFuzzy; 
+        int nCalculatedSumEmpty; 
+        int nCalculatedSum2; 
+        double dblCalculatedTremor; 
+        double dblCalculatedValue; 
+    }  
+
+    struct _FTRSCAN_FRAME_PARAMETERS 
+    { 
+        int nContrastOnDose2; 
+        int nContrastOnDose4; 
+        int nDose; 
+        int nBrightnessOnDose1; 
+        int nBrightnessOnDose2; 
+        int nBrightnessOnDose3; 
+        int nBrightnessOnDose4; 
+        _FTRSCAN_FAKE_REPLICA_PARAMETERS FakeReplicaParams; 
+        _FTRSCAN_FAKE_REPLICA_PARAMETERS Reserved; 
+    }
+
     struct _FTRSCAN_IMAGE_SIZE
     {
         public int nWidth;
@@ -16,6 +41,8 @@ namespace FutronicDrv
 
     class Device : IDisposable
     {
+        [DllImport("ftrScanAPI.dll")]
+        static extern bool ftrScanIsFingerPresent( IntPtr ftrHandle, out _FTRSCAN_FRAME_PARAMETERS pFrameParameters );
         [DllImport("ftrScanAPI.dll")]
         static extern IntPtr ftrScanOpenDevice();
         [DllImport("ftrScanAPI.dll")]
@@ -35,19 +62,20 @@ namespace FutronicDrv
 
         public bool Init()
         {
-            if (!Connected())
+            if (!Connected)
                 device = ftrScanOpenDevice();
-            return Connected();
+            return Connected;
         }
 
-        public bool Connected()
+        public bool Connected
         {
-            return (device != IntPtr.Zero);
+            get {return (device != IntPtr.Zero);}
+            set {}
         }
 
         public void Dispose()
         {
-            if (Connected())
+            if (Connected)
             {
                 ftrScanCloseDevice(device);
                 device = IntPtr.Zero;
@@ -56,7 +84,7 @@ namespace FutronicDrv
 
         public Bitmap ExportBitMap()
         {
-            if (!Connected())
+            if (!Connected)
                 return null;
 
             var t = new _FTRSCAN_IMAGE_SIZE();
@@ -83,5 +111,45 @@ namespace FutronicDrv
         {
             ftrScanSetDiodesStatus(device, (byte)(green ? 255 : 0), (byte)(red ? 255 : 0));
         }
+
+       
+
+    public bool IsFinger( )
+    {
+            var t = new _FTRSCAN_FRAME_PARAMETERS();
+            return ftrScanIsFingerPresent(device, out t);
     }
+}
+    /*
+typedef struct _FTRSCAN_IMAGE_SIZE 
+{ 
+int nWidth; 
+int nHeight; 
+int nImageSize; 
+}
+      
+  
+typedef struct _FTRSCAN_FRAME_PARAMETERS 
+{ 
+int nContrastOnDose2; 
+int nContrastOnDose4; 
+int nDose; 
+int nBrightnessOnDose1; 
+int nBrightnessOnDose2; 
+int nBrightnessOnDose3; 
+int nBrightnessOnDose4; 
+FTRSCAN_FAKE_REPLICA_PARAMETERS FakeReplicaParams; 
+BYTE Reserved[64-sizeof(FTRSCAN_FAKE_REPLICA_PARAMETERS)]; 
+}
+    
+BOOL WINAPI ftrScanGetImageSize( FTRHANDLE ftrHandle, PFTRSCAN_IMAGE_SIZE pImageSize ); 
+BOOL WINAPI ftrScanGetImage( FTRHANDLE ftrHandle, int nDose, PVOID pBuffer ); 
+BOOL WINAPI ftrScanGetFuzzyImage( FTRHANDLE ftrHandle, PVOID pBuffer ); 
+BOOL WINAPI ftrScanGetBacklightImage( FTRHANDLE ftrHandle, PVOID pBuffer ); 
+BOOL WINAPI ftrScanGetDarkImage( FTRHANDLE ftrHandle, PVOID pBuffer ); 
+BOOL WINAPI ftrScanGetColourImage( FTRHANDLE ftrHandle, PVOID pDoubleSizeBuffer ); 
+BOOL WINAPI ftrScanGetSmallColourImage( FTRHANDLE ftrHandle, PVOID pSmallBuffer ); 
+BOOL WINAPI ftrScanGetColorDarkImage( FTRHANDLE ftrHandle, PVOID pDoubleSizeBuffer );      
+     
+     */
 }

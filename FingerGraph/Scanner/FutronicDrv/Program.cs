@@ -4,22 +4,39 @@ using System.Linq;
 using System.Text;
 using System.Runtime.InteropServices;
 using System.Drawing;
+using System.Threading;
 
 namespace FutronicDrv
 {
     class Program
     {
-static void Wait( int n )
-{
-  int x = 0;
-  for (int i = 0; i < n; i++)
-    x += i;
-  if (x == -1)
-    Console.WriteLine("epic fail"); 
-}
+        static Device d = new Device();
+
+        static void Wait( int n )
+        {
+            int x = 0;
+            for (int i = 0; i < n; i++)
+                x += i;
+            if (x == -1)
+                Console.WriteLine("epic fail"); 
+        }
+        
+        static void Window()
+        {
+            Console.WriteLine("Thread-Window : started");
+            while (d.Connected)
+            {
+                Thread.Sleep(100);
+                if (d.IsFinger())
+                    Console.WriteLine("I see a finger! What shall I do?");
+            }
+            Console.WriteLine("Thread-Window : finished (device is disconnected)");
+        }
+
 
         static void Main(string[] args)
         {
+            Thread t = new Thread(Window);
             Device d = new Device();
 
             if (!d.Init())
@@ -28,8 +45,9 @@ static void Wait( int n )
                 return;
             }
             Console.WriteLine("Device is connected");
+            t.Start();
             Console.WriteLine("1");
-            //d.ExportBitMap().Save("D:\\finger.bmp");
+            d.ExportBitMap().Save("D:\\finger.bmp");
             Console.WriteLine("2");
             
             int n = (int)1e6, i = n / 2 , di = (int)1e4;
