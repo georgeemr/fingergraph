@@ -1,5 +1,6 @@
 ﻿/*
  * Griaule biometrics matcher
+ * (+ templates cache)
  * 
  * Last update : 31.03.2010
  */
@@ -28,6 +29,7 @@ namespace FingerGraph.GriauleMatcher
 {
     /// <summary>
     /// Griaule biometrics matcher
+    /// Now with cache of templates ^_^
     /// 
     /// NOTE: You have to install Griaule Biometrics SDK
     /// </summary>
@@ -36,6 +38,9 @@ namespace FingerGraph.GriauleMatcher
         #region Fields
         // Fingerprint core (very helpful stuff)
         private FingerprintCore fingerPrintCore;
+
+        // templates cache (for optimization)
+        private Dictionary<FingerprintRawImage, FingerprintTemplate> templateCache;        
         #endregion
 
         #region constructor and destructor
@@ -54,6 +59,8 @@ namespace FingerGraph.GriauleMatcher
             {
                 throw new Exception("Unable to initialize fingerPrintCore");
             }
+
+            templateCache = new Dictionary<FingerprintRawImage,FingerprintTemplate>();
         }
 
         /// <summary>
@@ -194,20 +201,26 @@ namespace FingerGraph.GriauleMatcher
         private FingerprintTemplate ExtractTemplate(FingerprintRawImage rawImage)
         {
             FingerprintTemplate tmpTemplate;
-            if (rawImage != null)
+
+            // if template already stored in cache
+            if (templateCache.TryGetValue(rawImage, out tmpTemplate))
             {
-                try
-                {
-                    tmpTemplate = null;
-                    fingerPrintCore.Extract(rawImage, ref tmpTemplate);
-                    return tmpTemplate;
-                }
-                catch
-                {
-                    throw new Exception("Unable to extract template!");
-                }
+                return tmpTemplate;
             }
-            throw new ArgumentNullException("rawImage");
+
+            // otherwise extract template and store it
+            try
+            {
+                tmpTemplate = null;
+                fingerPrintCore.Extract(rawImage, ref tmpTemplate);
+                templateCache.Add(rawImage, tmpTemplate);
+
+                return tmpTemplate;
+            }
+            catch
+            {
+                throw new Exception("Unable to extract template!");
+            }
         }
 
         /// <summary>
