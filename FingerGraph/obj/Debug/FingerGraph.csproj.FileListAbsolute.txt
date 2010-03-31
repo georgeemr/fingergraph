@@ -8,3 +8,14 @@ C:\fingergraph\FingerGraph\obj\Debug\FingerGraph.pdb
 C:\fingergraph\FingerGraph\obj\Debug\FingerGraph.MainForm.resources
 d:\fingergraph\FingerGraph\obj\Debug\FingerGraph.exe
 d:\fingergraph\FingerGraph\obj\Debug\FingerGraph.pdb
+D:\MyProjects\fingergraph\FingerGraph\obj\Debug\FingerGraph.exe
+D:\MyProjects\fingergraph\FingerGraph\obj\Debug\FingerGraph.pdb
+D:\MyProjects\fingergraph\FingerGraph\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProjects\fingergraph\FingerGraph\obj\Debug\FingerGraph.MainForm.resources
+D:\MyProjects\fingergraph\FingerGraph\obj\Debug\FingerGraph.Properties.Resources.resources
+D:\MyProjects\fingergraph\FingerGraph\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\MyProjects\fingergraph\FingerGraph\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\MyProjects\fingergraph\FingerGraph\bin\Debug\FingerGraph.exe.config
+D:\MyProjects\fingergraph\FingerGraph\bin\Debug\FingerGraph.exe
+D:\MyProjects\fingergraph\FingerGraph\bin\Debug\FingerGraph.pdb
+D:\MyProjects\fingergraph\FingerGraph\bin\Debug\mysql.data.dll

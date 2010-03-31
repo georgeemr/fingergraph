@@ -77,6 +77,28 @@
     <Compile Include="ComponentFactory.cs" />
     <Compile Include="Database\IDatabase.cs" />
     <Compile Include="FingerprintCard.cs" />
+    <Compile Include="GriauleMatcher\GFPL\GriauleFingerprintLibrary\DataTypes\FingerprintRawImage.cs" />
+    <Compile Include="GriauleMatcher\GFPL\GriauleFingerprintLibrary\DataTypes\FingerprintTemplate.cs" />
+    <Compile Include="GriauleMatcher\GFPL\GriauleFingerprintLibrary\Events\FingerEventArgs.cs" />
+    <Compile Include="GriauleMatcher\GFPL\GriauleFingerprintLibrary\Events\FingerEventType.cs" />
+    <Compile Include="GriauleMatcher\GFPL\GriauleFingerprintLibrary\Events\ImageEventArgs.cs" />
+    <Compile Include="GriauleMatcher\GFPL\GriauleFingerprintLibrary\Events\StatusEventArgs.cs" />
+    <Compile Include="GriauleMatcher\GFPL\GriauleFingerprintLibrary\Events\StatusEventType.cs" />
+    <Compile Include="GriauleMatcher\GFPL\GriauleFingerprintLibrary\Exceptions\FingerprintException.cs" />
+    <Compile Include="GriauleMatcher\GFPL\GriauleFingerprintLibrary\FingerEventHandler.cs" />
+    <Compile Include="GriauleMatcher\GFPL\GriauleFingerprintLibrary\FingerprintConstants.cs" />
+    <Compile Include="GriauleMatcher\GFPL\GriauleFingerprintLibrary\FingerprintCore.cs" />
+    <Compile Include="GriauleMatcher\GFPL\GriauleFingerprintLibrary\GrCaptureImageFormat.cs" />
+    <Compile Include="GriauleMatcher\GFPL\GriauleFingerprintLibrary\GrEnrollState.cs" />
+    <Compile Include="GriauleMatcher\GFPL\GriauleFingerprintLibrary\GrFingerEventHandler.cs" />
+    <Compile Include="GriauleMatcher\GFPL\GriauleFingerprintLibrary\GrFingerprintProxy.cs" />
+    <Compile Include="GriauleMatcher\GFPL\GriauleFingerprintLibrary\GrImageEventHandler.cs" />
+    <Compile Include="GriauleMatcher\GFPL\GriauleFingerprintLibrary\GrLicense.cs" />
+    <Compile Include="GriauleMatcher\GFPL\GriauleFingerprintLibrary\GrStatusEventHandler.cs" />
+    <Compile Include="GriauleMatcher\GFPL\GriauleFingerprintLibrary\GrTemplateFormat.cs" />
+    <Compile Include="GriauleMatcher\GFPL\GriauleFingerprintLibrary\ImageEventHandler.cs" />
+    <Compile Include="GriauleMatcher\GFPL\GriauleFingerprintLibrary\StatusEventHandler.cs" />
+    <Compile Include="GriauleMatcher\GriauleMatcher.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +121,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="App.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

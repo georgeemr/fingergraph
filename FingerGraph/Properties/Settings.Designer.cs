@@ -22,5 +22,23 @@ namespace FingerGraph.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("150")]
+        public int GriauleMatcherMinScoreToSuccessVerify {
+            get {
+                return ((int)(this["GriauleMatcherMinScoreToSuccessVerify"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("500")]
+        public int scanerResolution {
+            get {
+                return ((int)(this["scanerResolution"]));
+            }
+        }
     }
 }
