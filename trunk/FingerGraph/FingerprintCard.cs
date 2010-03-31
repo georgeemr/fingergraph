@@ -5,9 +5,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 
-namespace FingerGraphDB
+namespace FingerGraph
 {
-    class FingerprintCard
+    public class FingerprintCard
     {
         public FingerprintCard(string firstname, string lastname)
         {

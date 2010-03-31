@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace FingerGraphDB
+namespace FingerGraph.Database
 {
     interface IDatabase
     {

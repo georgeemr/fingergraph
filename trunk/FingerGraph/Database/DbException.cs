@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace FingerGraphDB
+namespace FingerGraph.Database
 {
     class DbException : ApplicationException
     {
