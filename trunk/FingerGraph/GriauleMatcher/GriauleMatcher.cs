@@ -116,6 +116,12 @@ namespace FingerGraph.GriauleMatcher
                 {
                     identifiedCard = card;
                     numberOfVerified++;
+
+                    if (numberOfVerified > 1 || numberOfVerified < 0)
+                    {
+                        throw new Exception("Oh shi~! Here is some critical security error!" +
+                    "For current image successfuly verified more than one fingercard!");
+                    }
                 }
             }
 
@@ -124,8 +130,7 @@ namespace FingerGraph.GriauleMatcher
             {
                 case 0: return null;
                 case 1: return identifiedCard;
-                default: throw new Exception("Oh shi~! Here is some critical security error!" +
-                    "For current image successfuly verified more than one fingercard!");
+                default: throw new Exception("You shouldn't be here!");
             }
         }
 
@@ -232,6 +237,14 @@ namespace FingerGraph.GriauleMatcher
         {
             FingerprintRawImage retRawImage = new FingerprintRawImage();
             Bitmap bitmapTemp = image as Bitmap;
+
+            #region paranoia section
+            if (image.Height > Settings.Default.maxImageHeight)
+                throw new ArgumentOutOfRangeException("image.Height");
+
+            if (image.Width > Settings.Default.maxImageWidth)
+                throw new ArgumentOutOfRangeException("image.Width");
+            #endregion
 
             retRawImage.rawImage = new byte[bitmapTemp.Width * bitmapTemp.Height];
 
