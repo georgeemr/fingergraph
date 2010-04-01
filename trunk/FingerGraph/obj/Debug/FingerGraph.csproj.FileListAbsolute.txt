@@ -19,3 +19,6 @@ D:\MyProjects\fingergraph\FingerGraph\bin\Debug\FingerGraph.exe.config
 D:\MyProjects\fingergraph\FingerGraph\bin\Debug\FingerGraph.exe
 D:\MyProjects\fingergraph\FingerGraph\bin\Debug\FingerGraph.pdb
 D:\MyProjects\fingergraph\FingerGraph\bin\Debug\mysql.data.dll
+C:\fingergraph\FingerGraph\bin\Debug\FingerGraph.exe.config
+C:\fingergraph\FingerGraph\bin\Debug\mysql.data.dll
+C:\fingergraph\FingerGraph\bin\Debug\ftrScanAPI.dll

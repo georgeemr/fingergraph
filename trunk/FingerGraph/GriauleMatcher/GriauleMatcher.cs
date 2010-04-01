@@ -14,7 +14,6 @@ using System.Drawing;
 #endregion
 
 #region FingerGraph usings
-using FingerGraphDB;
 using FingerGraph.Matcher;
 using FingerGraph.Properties;
 #endregion
@@ -33,7 +32,7 @@ namespace FingerGraph.GriauleMatcher
     /// 
     /// NOTE: You have to install Griaule Biometrics SDK
     /// </summary>
-    class GriauleMatcher : IMatcher
+    internal class GriauleMatcher : IMatcher
     {
         #region Fields
         // Fingerprint core (very helpful stuff)
