@@ -1,0 +1,264 @@
+BODY
+{
+    MARGIN-TOP: 10px;
+    BACKGROUND-COLOR: #cccccc
+}
+TABLE
+{
+    BACKGROUND-COLOR: #FFFFFF
+}
+TD.t_eav
+{
+    FONT-SIZE: 24px;
+    FONT-WEIGHT: bold;
+    FONT-FAMILY: arial, sans-serif; 
+    PADDING-LEFT: 20px;
+    PADDING-BOTTOM: 0px;
+    COLOR: #909090;
+    HEIGHT: 40px;
+    WIDTH: 600px; 
+    BORDER-SPACING: 0px;
+    BORDER-STYLE: none;
+    MARGIN: 0px;                                                                     
+}
+TD.r_u_e
+{
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: bold;
+    FONT-FAMILY: arial, sans-serif; 
+    PADDING-RIGHT: 40px;
+    PADDING-BOTTOM: 0px;
+    COLOR: #909090;
+    HEIGHT: 40px;
+    TEXT-ALIGN: right;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+    BORDER-SPACING: 0px;
+    BORDER-STYLE: none;
+    MARGIN: 0px;
+    LETTER-SPACING : 0.4;
+}
+TD.tablica
+{
+    HEIGHT: 185px;
+    PADDING-LEFT: 17px;
+}
+TABLE.t2
+{
+    HEIGHT: 185px;
+    WIDTH: 720px;
+    BORDER-STYLE:  solid;
+    BORDER-COLOR: #828282;
+    BORDER-WIDTH: 2px;
+    BACKGROUND-IMAGE: url("../photo/fon.gif");
+}
+TD.colt
+{
+    PADDING: 0px;
+    BORDER-WIDTH: 0px;
+    TEXT-ALIGN: right
+}
+TD.fak
+{
+    WIDTH: 443px;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: bold;
+    FONT-FAMILY: arial, sans-serif; 
+    PADDING-LEFT: 5px;
+    PADDING-BOTTOM: 0px;
+    COLOR: #909090;
+    HEIGHT: 50px;                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+}
+TD.avt_sys
+{
+    FONT-SIZE: 20px;
+    FONT-FAMILY: inpact, arial, sans-serif; 
+    COLOR: #990000;
+    TEXT-ALIGN: center;
+}
+TD.ruk
+{
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: bold;
+    FONT-FAMILY: arial, sans-serif; 
+    COLOR: #7e7e7e;
+    TEXT-ALIGN: right;
+    PADDING: 0px;
+    BORDER-WIDTH: 0px;
+}
+TD.menyu
+{
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: bold;
+    FONT-FAMILY: arial, sans-serif; 
+    COLOR: #909090;
+    TEXT-ALIGN: center;
+    HEIGHT: 20px;                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+    LETTER-SPACING : 0.4;
+}
+TD.menyu_n
+{
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: bold;
+    FONT-FAMILY: arial, sans-serif; 
+    COLOR: #909090;
+    TEXT-ALIGN: center;
+    PADDING-TOP: 30px;
+    HEIGHT: 60px;                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+    LETTER-SPACING : 0.4;
+}
+P
+{
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: normal;
+    FONT-FAMILY: arial, sans-serif; 
+    COLOR: #1b1b1b;
+    TEXT-ALIGN: left;
+    PADDING-RIGHT: 30px;
+    LINE-HEIGHT: 1.5em;
+    TEXT-ALIGN: justify;
+}
+P.literatura
+{
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: normal;
+    FONT-FAMILY: arial, sans-serif; 
+    COLOR: #1b1b1b;
+    TEXT-ALIGN: left;
+    PADDING-RIGHT: 30px;
+    LINE-HEIGHT: 1.5em;
+    LETTER-SPACING : 0.4;
+}
+P.spisok
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 12px;
+    FONT-FAMILY: arial, sans-serif; 
+    COLOR: #1b1b1b;
+    TEXT-ALIGN: left;
+    PADDING-RIGHT: 30px;
+    PADDING-LEFT: 40px;
+    LINE-HEIGHT: 1.5em;
+    TEXT-ALIGN: justify
+}
+TD.foto
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: arial, sans-serif; 
+    COLOR: #990000;
+    TEXT-ALIGN: center;
+    BACKGROUND-IMAGE: url("../photo/fingerprint.gif");
+    BACKGROUND-REPEAT: no-repeat;
+}
+IMG.zag
+{
+    PADDING-LEFT: 60px;    
+}
+A
+{
+    TEXT-DECORATION: none;
+    LETTER-SPACING : 0.4;
+}
+A.kr
+{
+    COLOR: #990000;
+}
+A:hover
+{
+    COLOR: #990000;
+}
+A.foto:hover
+{
+    FONT-WEIGHT: bold;
+}
+TABLE.v
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: arial, sans-serif; 
+    COLOR: #1b1b1b;
+    TEXT-ALIGN: center;
+    LINE-HEIGHT: 0.98em;
+    BORDER-WIDTH: 1px;    
+}
+TD.v1
+{
+    BACKGROUND-COLOR: #f9f9f9;
+    TEXT-ALIGN: center;
+    PADDING-BOTTOM: 4px;
+    PADDING-LEFT: 20px;    
+    PADDING-TOP: 3px;    
+    PADDING-RIGHT: 20px;
+}
+TD.v2
+{
+    BACKGROUND-COLOR: #f9f9f9;
+    TEXT-ALIGN: center;
+    PADDING-BOTTOM: 3px;
+    PADDING-LEFT: 6px;    
+    PADDING-TOP: 2px;    
+    PADDING-RIGHT: 4px;
+}
+TD.v3
+{
+    BACKGROUND-COLOR: #f0f0f0;
+    TEXT-ALIGN: center;
+    PADDING-BOTTOM: 4px;
+    PADDING-TOP: 3px;    
+}
+TD.v4
+{
+    BACKGROUND-COLOR: #f9f9f9;
+    TEXT-ALIGN: left;
+    PADDING-BOTTOM: 3px;
+    PADDING-LEFT: 8px;    
+    PADDING-TOP: 2px;    
+    PADDING-RIGHT: 4px;
+}
+TD.v5
+{
+    BACKGROUND-COLOR: #f9f9f9;
+    TEXT-ALIGN: center;
+    PADDING-BOTTOM: 4px;
+    PADDING-LEFT: 5px;    
+    PADDING-TOP: 3px;    
+    PADDING-RIGHT: 5px;
+}
+a.evil {
+	display : block;
+    width:435px; 
+    height:18px;
+	background : url(../photo/privalov_rus.gif) no-repeat; 
+	background-position : right;
+}	
+a.evil:hover {
+	display : block;
+    width:435px; 
+    height:18px;
+	background : url(../photo/privalov_rus_kr.gif) no-repeat; 
+	background-position : right;
+}
+a.evil_eng {
+	display : block;
+    width:435px; 
+    height:18px;
+	background : url(../photo/privalov_eng.gif) no-repeat; 
+	background-position : right;
+}	
+a.evil_eng:hover {
+	display : block;
+    width:435px; 
+    height:18px;
+	background : url(../photo/privalov_eng_kr.gif) no-repeat; 
+	background-position : right;
+}
+li{
+	FONT-SIZE: 12px;
+	FONT-FAMILY: arial, sans-serif;
+	COLOR: #1b1b1b;
+	TEXT-ALIGN: left;
+	PADDING-RIGHT: 30px;
+	LINE-HEIGHT: 1.5em;
+	TEXT-ALIGN: justify;
+	list-style-image : url(../photo/4erta.gif);
+}
+a.text {
+	text-decoration : underline;
+}
