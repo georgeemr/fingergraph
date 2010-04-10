@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.1.45, for Win64 (unknown)
 --
--- Host: localhost    Database: fgraphdb
+-- Host: localhost    Database: fnew
 -- ------------------------------------------------------
 -- Server version	5.1.45-community
 
@@ -27,7 +27,7 @@ CREATE TABLE `fprinttbl` (
   `userid` varchar(36) NOT NULL,
   KEY `idkey` (`userid`),
   CONSTRAINT `idkey` FOREIGN KEY (`userid`) REFERENCES `usertbl` (`userid`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=cp1251;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,28 +37,6 @@ CREATE TABLE `fprinttbl` (
 LOCK TABLES `fprinttbl` WRITE;
 /*!40000 ALTER TABLE `fprinttbl` DISABLE KEYS */;
 /*!40000 ALTER TABLE `fprinttbl` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `t1`
---
-
-DROP TABLE IF EXISTS `t1`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `t1` (
-  `id` blob
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `t1`
---
-
-LOCK TABLES `t1` WRITE;
-/*!40000 ALTER TABLE `t1` DISABLE KEYS */;
-INSERT INTO `t1` VALUES ('\0\0\0xœKLJN\0Ø‹');
-/*!40000 ALTER TABLE `t1` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -73,7 +51,7 @@ CREATE TABLE `usertbl` (
   `username` varchar(255) NOT NULL,
   `secondname` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`userid`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=cp1251;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -94,4 +72,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-03-28 19:22:50
+-- Dump completed on 2010-04-10 15:39:29
