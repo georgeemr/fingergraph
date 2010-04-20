@@ -1,18 +1,28 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ctype="Workspace" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FingerGraph\Form1.Designer.cs" ctype="Workbench">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FingerGraph/GriauleMatcher/GriauleMatcher.cs" ctype="Workbench">
     <Files>
-      <File FileName="FingerGraph\Form1.cs" Line="7" Column="19" />
-      <File FileName="FingerGraph\Program.cs" Line="1" Column="1" />
-      <File FileName="FingerGraph\Form1.Designer.cs" Line="1" Column="1" />
+      <File FileName="FingerGraph/Database/CacheDb.cs" Line="1" Column="1" />
+      <File FileName="FingerGraph/Scanner/IScanner.cs" Line="1" Column="1" />
+      <File FileName="FingerGraph/Scanner/Device.cs" Line="1" Column="1" />
+      <File FileName="FingerGraph/Matcher/IMatcher.cs" Line="1" Column="1" />
+      <File FileName="FingerGraph/GriauleMatcher/GFPL/GriauleFingerprintLibrary/FingerEventHandler.cs" Line="1" Column="1" />
+      <File FileName="FingerGraph/GriauleMatcher/GFPL/GriauleFingerprintLibrary/GrEnrollState.cs" Line="1" Column="1" />
+      <File FileName="FingerGraph/GriauleMatcher/GriauleMatcher.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="FingerGraph" expanded="True">
-            <Node name="Form1.cs" expanded="True">
-              <Node name="Form1.Designer.cs" selected="True" />
+            <Node name="Database" expanded="True" />
+            <Node name="GriauleMatcher" expanded="True">
+              <Node name="GFPL" expanded="True">
+                <Node name="GriauleFingerprintLibrary" expanded="True" />
+              </Node>
+              <Node name="GriauleMatcher.cs" selected="True" />
             </Node>
+            <Node name="Matcher" expanded="True" />
+            <Node name="Scanner" expanded="True" />
           </Node>
         </State>
       </Pad>
