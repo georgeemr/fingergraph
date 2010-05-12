@@ -1,1 +1,1 @@
-int capture(/*char *name*/);
+int capture(char *name);

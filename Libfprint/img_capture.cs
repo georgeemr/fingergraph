@@ -11,8 +11,8 @@ using System;
 using System.Runtime.InteropServices;
 
 public class img_capture {
-  public static int capture() {
-    int ret = img_capturePINVOKE.capture();
+  public static int capture(string name) {
+    int ret = img_capturePINVOKE.capture(name);
     return ret;
   }
 
