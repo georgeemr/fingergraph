@@ -185,5 +185,5 @@ class img_capturePINVOKE {
 
 
   [DllImport("img_capture", EntryPoint="CSharp_capture")]
-  public static extern int capture();
+  public static extern int capture(string jarg1);
 }

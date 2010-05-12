@@ -35,8 +35,7 @@ struct fp_dscv_dev *discover_device(struct fp_dscv_dev **discovered_devs)
 	return ddev;
 }
 
-#define name "a.pgm"
-int capture(/*char  *name*/)
+int capture(char  *name)
 {
 	int r = 1;
 	struct fp_dscv_dev *ddev;

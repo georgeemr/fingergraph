@@ -263,11 +263,13 @@ SWIGEXPORT void SWIGSTDCALL SWIGRegisterStringCallback_img_capture(SWIG_CSharpSt
 extern "C" {
 #endif
 
-SWIGEXPORT int SWIGSTDCALL CSharp_capture() {
+SWIGEXPORT int SWIGSTDCALL CSharp_capture(char * jarg1) {
   int jresult ;
+  char *arg1 = (char *) 0 ;
   int result;
   
-  result = (int)capture();
+  arg1 = (char *)jarg1; 
+  result = (int)capture(arg1);
   jresult = result; 
   return jresult;
 }
