@@ -1,0 +1,1 @@
+Will graph metthod reduce the total number of fingerprints to match, and if it will, what will be the increase in overall performance
